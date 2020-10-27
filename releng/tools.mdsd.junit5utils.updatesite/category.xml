@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="tools.mdsd.junit5utils.feature" version="0.1.0.qualifier">
+      <category name="library-junit5utils.category"/>
+   </feature>
+   <feature id="tools.mdsd.junit5utils.feature.source" version="0.1.0.qualifier">
+      <category name="library-junit5utils.category.source"/>
+   </feature>
+   <category-def name="library-junit5utils.category" label="Library-JUnit5Utils"/>
+   <category-def name="library-junit5utils.category.source" label="Library-JUnit5Utils Developer Resources"/>
+</site>
