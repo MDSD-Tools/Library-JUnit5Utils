@@ -12,6 +12,7 @@ Require-Bundle: tools.mdsd.library.standalone.initialization;bundle-version="0.2
  com.google.guava;bundle-version="27.1.0"
 Bundle-ActivationPolicy: lazy
 Import-Package: org.eclipse.core.runtime,
- org.junit.jupiter.api.extension
+ org.junit.jupiter.api.extension,
+ org.junit.platform.commons.support;version="1.6.0"
 Export-Package: tools.mdsd.junit5utils.annotations,
  tools.mdsd.junit5utils.extensions

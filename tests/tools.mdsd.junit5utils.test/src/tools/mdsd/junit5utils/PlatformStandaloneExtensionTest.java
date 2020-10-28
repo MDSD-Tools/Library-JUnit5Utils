@@ -5,12 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.eclipse.core.runtime.Platform;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import tools.mdsd.junit5utils.annotations.InitializationTaskProvider;
-import tools.mdsd.junit5utils.annotations.PluginTestOnly;
 import tools.mdsd.junit5utils.extensions.PlatformStandaloneExtension;
 import tools.mdsd.library.standalone.initialization.InitializationTask;
 import tools.mdsd.library.standalone.initialization.StandaloneInitializationException;
@@ -60,11 +58,5 @@ class PlatformStandaloneExtensionTest {
     @Test
     void testtestInitializationIsRunJustOnce_2() {
         assertTrue(initializationCounter.compareAndSet(1, 1));
-    }
-    
-    @Test
-    @PluginTestOnly
-    void thisTestShouldOnlyBeExecutedAsPluginTest() {
-        assertTrue(Platform.isRunning());
     }
 }
