@@ -8,6 +8,7 @@ import org.junit.jupiter.api.extension.ExecutionCondition;
 import org.junit.jupiter.api.extension.ExtensionContext;
 
 import tools.mdsd.junit5utils.annotations.PluginTestOnly;
+import tools.mdsd.junit5utils.annotations.StandaloneTestOnly;
 
 public class PluginTestFilterExtension implements ExecutionCondition {
 
@@ -16,6 +17,10 @@ public class PluginTestFilterExtension implements ExecutionCondition {
         if (findAnnotation(context.getElement(), PluginTestOnly.class).isPresent() && !Platform.isRunning()) {
             return ConditionEvaluationResult
                 .disabled("This test case is disabled in standalone-mode. It needs to be executed as plugin test.");
+        }
+        if (findAnnotation(context.getElement(), StandaloneTestOnly.class).isPresent() && Platform.isRunning()) {
+            return ConditionEvaluationResult
+                .disabled("This test case is disabled in OSGi mode. It needs to be executed as standalone test.");
         }
         return ConditionEvaluationResult.enabled("Test enabled by default");
     }
