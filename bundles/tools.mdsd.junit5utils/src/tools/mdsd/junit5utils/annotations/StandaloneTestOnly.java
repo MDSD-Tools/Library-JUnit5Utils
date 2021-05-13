@@ -9,11 +9,11 @@ import java.lang.annotation.Target;
 
 import org.junit.jupiter.api.extension.ExtendWith;
 
-import tools.mdsd.junit5utils.extensions.PluginTestFilterExtension;
+import tools.mdsd.junit5utils.extensions.StandaloneTestFilterExtension;
 
 @Retention(RUNTIME)
 @Target({ METHOD, TYPE })
-@ExtendWith(PluginTestFilterExtension.class)
+@ExtendWith(StandaloneTestFilterExtension.class)
 public @interface StandaloneTestOnly {
 
 }
