@@ -2,7 +2,7 @@
 <feature
       id="tools.mdsd.junit5utils.feature"
       label="Library-JUnit5Utils Feature"
-      version="0.1.0.qualifier"
+      version="0.2.0.qualifier"
       license-feature="tools.mdsd.license.epl2"
       license-feature-version="1.0.0">
 

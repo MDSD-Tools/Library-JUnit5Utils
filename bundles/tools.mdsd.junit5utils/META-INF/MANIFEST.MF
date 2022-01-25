@@ -2,13 +2,13 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: tools.mdsd.junit5utils;singleton:=true
-Bundle-Version: 0.1.0.qualifier
+Bundle-Version: 0.2.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Automatic-Module-Name: tools.mdsd.junit5utils
 Bundle-RequiredExecutionEnvironment: JavaSE-11
-Require-Bundle: tools.mdsd.library.standalone.initialization;bundle-version="0.2.0",
+Require-Bundle: tools.mdsd.library.standalone.initialization,
  com.google.guava;bundle-version="27.1.0"
 Bundle-ActivationPolicy: lazy
 Import-Package: org.eclipse.core.runtime,
