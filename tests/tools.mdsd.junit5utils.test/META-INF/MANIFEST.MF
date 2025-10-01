@@ -2,8 +2,8 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: EclipsePlugin Test
 Bundle-SymbolicName: tools.mdsd.junit5utils.test
-Bundle-Version: 0.2.0.qualifier
-Fragment-Host: tools.mdsd.junit5utils;bundle-version="0.2.0"
+Bundle-Version: 1.0.0
+Fragment-Host: tools.mdsd.junit5utils;bundle-version="1.0.0"
 Automatic-Module-Name: tools.mdsd.junit5utils.test
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Import-Package: org.junit;version="4.13.0",
