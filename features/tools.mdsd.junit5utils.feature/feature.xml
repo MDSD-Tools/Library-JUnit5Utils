@@ -2,9 +2,9 @@
 <feature
       id="tools.mdsd.junit5utils.feature"
       label="Library-JUnit5Utils Feature"
-      version="1.1.0"
+      version="1.2.0"
       license-feature="tools.mdsd.license.epl2"
-      license-feature-version="1.1.0">
+      license-feature-version="1.2.0">
 
    <requires>
       <import feature="tools.mdsd.license.epl2"/>
